@@ -24,5 +24,10 @@ public class Main {
         Order order = new Order(1L, "John");
         String bill = order.formOrderBill(cart);
         System.out.println(bill);
+
+        Box box = new Box(2, 4, 6);
+        System.out.println("Об'єм = " + box.getVolume());
+        System.out.println("Площа бічної поверхні = " + box.getLateralSurfaceArea());
+        System.out.println("Площа поверхні = " + box.getSurfaceArea());
     }
 }
